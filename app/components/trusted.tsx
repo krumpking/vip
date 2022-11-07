@@ -2,7 +2,7 @@
 
 export default function Trusted() {
     return (
-        <div className='m-8 flex flex-col bg-white rounded-lg p-4  bg-opacity-10 backdrop-blur-sm'>
+        <div className='flex flex-col bg-white rounded-lg p-4  bg-opacity-10 backdrop-blur-sm'>
             <div className='m-auto'>
                 <p className='text-slate-50 text-xs font-extrabold'>AS TRUSTED BY</p>
             </div>

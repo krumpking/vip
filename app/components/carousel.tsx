@@ -7,33 +7,29 @@ const data = [
     {
         id: 0,
         title: "First title",
-        image: '/gifs/shereigns.gif'
+        image: '/gifs/movie.gif'
     },
     {
         id: 1,
         title: "Second title",
-        image: '/gifs/travelhub.gif'
+        image: '/gifs/wave.gif'
     },
     {
         id: 2,
         title: "Third title",
         image: '/gifs/shereigns.gif'
     },
+
+    {
+        id: 3,
+        title: "Fourth title",
+        image: '/gifs/houseofkenzolla.gif'
+    },
     {
         id: 4,
-        title: "Fourth title",
-        image: '/gifs/shereigns.gif'
+        title: "Second title",
+        image: '/gifs/shopping.gif'
     },
-    {
-        id: 5,
-        title: "Fourth title",
-        image: '/gifs/shereigns.gif'
-    },
-    {
-        id: 6,
-        title: "Fourth title",
-        image: '/gifs/shereigns.gif'
-    }
 ];
 
 const Carousel = (props: any) => {
@@ -60,7 +56,7 @@ const Carousel = (props: any) => {
 
     const moveNext = useCallback(() => {
 
-        if (active !== 5) setActive(active + 1);
+        if (active !== 4) setActive(active + 1);
         else setActive(0);
 
     }, [active]);
@@ -71,8 +67,8 @@ const Carousel = (props: any) => {
 
 
     return (
-        <div className="min-h-scree p-3 relative">
-            <div className="w-96 mx-auto flex flex-row" >
+        <div className="h-fit relative">
+            <div className="w-fit mx-auto flex flex-row" >
                 {transitions((style, item) => (
                     <animated.div style={style}>
                         <>
@@ -82,7 +78,7 @@ const Carousel = (props: any) => {
                                 }}
                             >
                                 <div className='border-8 border-white rounded-md border-opacity-40 shadow-2xl'>
-                                    <img src={data[item]?.image} />
+                                    <img src={data[item]?.image} className='max-h-96' />
                                 </div>
 
                             </animated.div>

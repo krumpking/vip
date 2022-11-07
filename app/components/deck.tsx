@@ -5,13 +5,14 @@ import { useGesture } from 'react-use-gesture'
 // import './styles.css'
 
 const cards = [
-    'https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg',
-    'https://cdn.pixabay.com/photo/2018/03/27/21/43/startup-3267505__340.jpg',
-    'https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg',
-    'https://cdn.pixabay.com/photo/2018/03/27/21/43/startup-3267505__340.jpg',
-    'https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg',
-    'https://cdn.pixabay.com/photo/2018/03/27/21/43/startup-3267505__340.jpg',
-    'https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg'
+    '/images/kk.png',
+    '/images/alumni.png',
+    '/images/nhakavideo.png',
+    '/images/africamining.png',
+    '/images/alumniLogin.png',
+    '/images/efundoPlayer.png',
+    '/images/nhaka.png',
+
 ]
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
@@ -36,8 +37,10 @@ const Deck = () => {
                 style={{ transform: interpolate([x, y], (x, y) => `translate3d(${x}px,${y}px,0)`) }}>
                 {/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
                 <animated.div
-                    className='w-96 h-96'
+                    className='w-96 h-96 bg-cover'
                     style={{ transform: interpolate([rot, scale], trans), backgroundImage: `url(${cards[i]})` }} />
+
+
             </animated.div>
         ))}
     </div>

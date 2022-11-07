@@ -7,7 +7,7 @@ interface MyProps {
 const Header: FC<MyProps> = ({ children }) => {
     return (
         <div className='relative h-1/2'>
-            <div className='h-screen grid grid-cols-10'>
+            <div className='h-screen grid grid-cols-10 w-full'>
 
                 <div className='col-span-6 bg-cover bg-black-metal'>
 

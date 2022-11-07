@@ -6,14 +6,13 @@ import ThirdButton from './thirdButton';
 
 interface MyProps {
     image: string,
-    name: string,
     comment: string,
     contact: string
 
 }
 
 
-const TestimonialCard: FC<MyProps> = ({ image, name, comment, contact }) => {
+const TestimonialCard: FC<MyProps> = ({ image, comment, contact }) => {
     const router = useRouter()
 
 

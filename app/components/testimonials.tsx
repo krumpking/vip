@@ -5,35 +5,31 @@ import TestimonialCard from './testimonialCard'
 
 const testimonials = [
     {
-        image: 'https://picsum.photos/500/300?random=1',
-        name: 'Fadzi',
-        comment: 'Always excellent delivery of project, on time and always so cordial',
-        contact: '+263773363139'
+        image: '/images/audy.jpg',
+        comment: 'Ever so realiable, and timely in delivering on agreed milestones',
+        contact: '263774407784'
     },
     {
-        image: 'https://picsum.photos/500/300?random=1',
-        name: 'Fadzi',
-        comment: 'Always excellent delivery of project, on time and always so cordial',
-        contact: '+263773363139'
+        image: '/images/ashy.jpg',
+        comment: 'Excellent delivery and capturing the brand image',
+        contact: '263774326905'
     },
     {
-        image: 'https://picsum.photos/500/300?random=1',
-        name: 'Fadzi',
-        comment: 'Always excellent delivery of project, on time and always so cordial',
-        contact: '+263773363139'
+        image: '/images/joe.jpeg',
+        comment: 'Have seen his work from the time we met 5 years ago, and it keeps getting better and better',
+        contact: '263774326905'
     },
     {
-        image: 'https://picsum.photos/500/300?random=1',
-        name: 'Fadzi',
-        comment: 'Always excellent delivery of project, on time and always so cordial',
-        contact: '+263773363139'
+        image: '/images/domi.jpg',
+        comment: 'Always quick to catch the Vision and run with it!! I am impressed',
+        contact: '263774326905'
     },
     {
-        image: 'https://picsum.photos/500/300?random=1',
-        name: 'Fadzi',
-        comment: 'Always excellent delivery of project, on time and always so cordial',
-        contact: '+263773363139'
+        image: '/images/domi.jpg',
+        comment: 'I like that they benchmark themselves with global standards!',
+        contact: '263774326905'
     },
+
 ]
 
 export default function Testimonials() {
@@ -46,9 +42,6 @@ export default function Testimonials() {
                 <div className='w-fit '>
                     <p className='text-white text-md font-bold'>
                         Vision is like a fingerprint, there is no identical no matter how closely matches it might look. We can bring out your unique Vision
-                    </p>
-                    <p className='text-white text-md font-bold'>
-                        Why fit in, when you were meant to stand out?
                     </p>
                 </div>
 
@@ -66,7 +59,7 @@ export default function Testimonials() {
                         >
                             {(styles, v) =>
                                 <animated.div style={styles}>
-                                    <TestimonialCard image={v.image} name={v.name} comment={v.comment} contact={v.contact} />
+                                    <TestimonialCard image={v.image} comment={v.comment} contact={v.contact} />
                                 </animated.div>
                             }
                         </Transition>

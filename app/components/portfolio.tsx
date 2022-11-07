@@ -5,31 +5,23 @@ import PortfolioCard from './portfolioCard'
 
 const projects = [
     {
-        title: "Title",
-        subtitle: "Subtile",
-        image: "https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg",
-        brief: "Brief",
+        image: "/gifs/bishopsmount.gif",
+        brief: "Bishops Mount Centre",
 
     },
     {
-        title: "Title",
-        subtitle: "Subtile",
-        image: "https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg",
-        brief: "Brief",
+        image: "/gifs/africamining.gif",
+        brief: "Africa Mining",
 
     },
     {
-        title: "Title",
-        subtitle: "Subtile",
-        image: "https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg",
-        brief: "Brief",
+        image: "/gifs/gigz.gif",
+        brief: "Gigz",
 
     },
     {
-        title: "Title",
-        subtitle: "Subtile",
-        image: "https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg",
-        brief: "Brief",
+        image: "/gifs/consultancyhub.gif",
+        brief: "Consultancy Hub",
 
     },
 
@@ -37,62 +29,46 @@ const projects = [
 
 const mobileProjects = [
     {
-        title: "Title",
-        subtitle: "Subtile",
-        image: "https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg",
-        brief: "Brief",
+        image: "/gifs/shoe.gif",
+        brief: "E-Commerce App",
 
     },
     {
-        title: "Title",
-        subtitle: "Subtile",
-        image: "https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg",
-        brief: "Brief",
+        image: "/gifs/chatapp.gif",
+        brief: "Chat App",
 
     },
     {
-        title: "Title",
-        subtitle: "Subtile",
-        image: "/images/bggold.jpg",
-        brief: "Brief",
+        image: "/gifs/ticket.gif",
+        brief: "Ticket App",
 
     },
     {
-        title: "Title",
-        subtitle: "Subtile",
-        image: "/images/bggold.jpg",
-        brief: "Brief",
+        image: "/gifs/shopping.gif",
+        brief: "Shopping App",
 
     },
 ]
 
 const chatBots = [
     {
-        title: "Title",
-        subtitle: "Subtile",
-        image: "https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg",
-        brief: "Brief",
+        image: "/gifs/wa.gif",
+        brief: "Whatsapp Chatbot",
 
     },
     {
-        title: "Title",
-        subtitle: "Subtile",
-        image: "https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_960_720.jpg",
-        brief: "Brief",
+        image: "/gifs/fb.gif",
+        brief: "Facebook Chatbot",
 
     },
     {
-        title: "Title",
-        subtitle: "Subtile",
-        image: "/images/bggold.jpg",
-        brief: "Brief",
+        image: "/gifs/matrix.gif",
+        brief: "Matrix loading animation",
 
     },
     {
-        title: "Title",
-        subtitle: "Subtile",
-        image: "/images/bggold.jpg",
-        brief: "Brief",
+        image: "/gifs/umoja.gif",
+        brief: "Chat App",
 
     },
 ]
@@ -131,8 +107,6 @@ export default function Portfolio() {
                                     <PortfolioCard
                                         website={true}
                                         image={v.image}
-                                        title={v.title}
-                                        subtitle={v.subtitle}
                                         brief={v.brief} />
                                 </animated.div>
                             }
@@ -159,8 +133,6 @@ export default function Portfolio() {
                                     <PortfolioCard
                                         website={false}
                                         image={v.image}
-                                        title={v.title}
-                                        subtitle={v.subtitle}
                                         brief={v.brief} />
                                 </animated.div>
                             }
@@ -185,8 +157,6 @@ export default function Portfolio() {
                                     <PortfolioCard
                                         website={false}
                                         image={v.image}
-                                        title={v.title}
-                                        subtitle={v.subtitle}
                                         brief={v.brief} />
                                 </animated.div>
                             }

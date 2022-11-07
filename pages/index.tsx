@@ -43,10 +43,10 @@ export default function Home() {
     <div className='relative bg-black'>
       <div>
         <Header>
-          <div className='flew flex-col'>
+          <div className='flex flex-col'>
             <Nav />
             <div className='grid grid-cols-10'>
-              <div className='col-span-4 flex flex-col'>
+              <div className='col-span-4 flex flex-col m-4'>
                 <h1 className='text-white text-7xl font-extrabold m-8 w-full'>Vision Is Primary</h1>
                 <p className='text-white text-lg mt-8 ml-8 mr-8'>After Lot had gone, the LORD said to Abram, “Look as far as you can see in every direction—north and south, east and west.</p>
                 <p className='text-white text-md ml-8 mr-8'>Genesis 13:14</p>
@@ -57,7 +57,7 @@ export default function Home() {
                 </div>
               </div>
               <div className='col-span-6 w-full'>
-                <Carousel slides={['/gifs/shereigns.gif', '/gifs/shereigns.gif', '/gifs/shereigns.gif']} />
+                <Carousel />
               </div>
 
             </div>
@@ -71,8 +71,8 @@ export default function Home() {
           <section id="about">
             {scrollY > 8 ? <About
               title={"Over 5 years of solving problems using software"}
-              brief={"There are millions of websites in the world! We can help make yours stand out with your specific identity on show, as far as your eyes can see!"}
-              phrase={"We crafting meaningful interactions via animations that play an important role in capturing the visitor’s attention and retention in using your Website or Mobile Application."}
+              brief={"How far can you see? How much is your unique identity expressed through your systems? This is what we specilise in! Bringing your unique Vision to reality"}
+              phrase={"We craft meaningful interactions via animations that play an important role in capturing the visitor’s attention and retention in using your Website or Mobile Application."}
             /> : <p></p>}
           </section>
           <section id="cases">

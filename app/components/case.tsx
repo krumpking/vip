@@ -70,7 +70,7 @@ const useCases = [
     },
     {
         "case": "Insurence",
-        "description": "You can set up a platform to see all the client premiums.The payouts done and expect, maturity stage all at your finger tips",
+        "description": "You can set up a platform to see all the client premiums.The payouts done and expected maturity stage all at your finger tips",
         "platfroms": [
             {
                 title: "Whatsapp",
