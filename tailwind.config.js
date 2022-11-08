@@ -14,6 +14,23 @@ module.exports = {
       },
       fontFamily: {
         'sans-serif': ['Roboto', ...defaultTheme.fontFamily.sans]
+      },
+      screens: {
+        xxs: '250px',
+        xxsMD: '350px',
+        xs: '375px',
+        // => @media (min-width: 375px) { ... }
+
+        xsMD: '400px',
+        // => @media (min-width: 400px) { ... }
+
+        smXS: '500px',
+        // => @media (min-width: 500x) { ... }
+        mini: '760px',
+        // => @media (min-width: 760x) { ... }
+
+        afterMini: '800px'
+        // => @media (min-width: 780x) { ... }
       }
     }
   },

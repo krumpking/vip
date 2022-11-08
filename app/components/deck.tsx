@@ -29,21 +29,21 @@ const Deck = () => {
     // Create a gesture, we're interested in down-state, delta (current-pos - click-pos), direction and velocity
 
     // Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
-    return (<div>
+    return (<>
         {props.map(({ x, y, rot, scale }, i) => (
             <animated.div
-                className='  absolute justify-items-center p-8'
+                className='absolute justify-items-center md:p-8'
                 key={i}
                 style={{ transform: interpolate([x, y], (x, y) => `translate3d(${x}px,${y}px,0)`) }}>
                 {/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
                 <animated.div
-                    className='w-96 h-96 bg-cover'
+                    className='w-48 xs:w-72 sm:w-96 h-96 bg-cover m-4 md:m-0'
                     style={{ transform: interpolate([rot, scale], trans), backgroundImage: `url(${cards[i]})` }} />
 
 
             </animated.div>
         ))}
-    </div>
+    </>
     )
 
 }

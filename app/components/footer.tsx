@@ -6,7 +6,7 @@ import Button from './button'
 
 export default function Footer() {
     return (
-        <div className="grid grid-cols-4 p-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 p-8">
             <div className='flex flex-col'>
                 <img src={"/images/logo.png"} className="w-24 h-24 my-2" />
                 <p className="text-white text-sm my-2">© 2022 Vision Is Primary</p>

@@ -6,7 +6,7 @@ import Button from './button'
 
 const useCases = [
     {
-        "case": "E-commerce",
+        "case": "Commerce",
         "description": "You can set up your shop to work completely online, with payments and everything set up online.",
         "platfroms": [
             {
@@ -92,7 +92,7 @@ const Cases = () => {
 
 
     return (
-        <div className='flex flex-col h-screen items-center bgimg bg-cover m-4'>
+        <div className='flex flex-col h-fit items-center m-4'>
             <Transition
                 items={true}
                 from={{ opacity: 0 }}
@@ -103,7 +103,7 @@ const Cases = () => {
             >
                 {(styles, item) =>
                     item && <animated.div style={styles}>
-                        <h1 className='m-8 font-extrabold text-5xl text-white justify-items-center'>What do you see?</h1>
+                        <h1 className='m-8 font-extrabold text-5xl text-white justify-items-center text-center'>What do you see?</h1>
 
                     </animated.div>
                 }
@@ -133,13 +133,13 @@ const Cases = () => {
             >
                 {(styles, item) =>
                     item && <animated.div style={styles}>
-                        <p className='text-white'>Some intersting Use Cases</p>
+                        <p className='text-white m-4'>Some intersting Use Cases</p>
 
                     </animated.div>
                 }
             </Transition>
 
-            <div className='h-screen grid grid-cols-5'>
+            <div className='h-fit grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5'>
                 {useCases.map((v, index) => {
                     return (
                         <Transition
@@ -152,7 +152,7 @@ const Cases = () => {
                         >
                             {(styles, v) =>
                                 <animated.div style={styles}>
-                                    <div className='relative bg-gold-metal px-6 pt-10 pb-8 shadow-xl ring-1 ring-yellow-400 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10 min-w-fit h-fit m-4'>
+                                    <div className='relative bg-gold-metal px-6 pt-10 pb-8 shadow-xl ring-1 ring-yellow-400 sm:mx-auto sm:max-w-lg sm:rounded-lg min-w-fit h-fit'>
                                         <h1 className="text-3xl m-2">{v.case}</h1>
                                         <p className="text-sm text-center m-2">{v.description}</p>
                                         <p className="text-sm ">Platorms of choice:</p>

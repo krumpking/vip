@@ -18,7 +18,7 @@ const PortfolioCard: FC<MyProps> = ({ image, brief, website }) => {
             <div className='w-full h-1/8 absolute inset-x-0 bottom-0 bg-white rounded-lg p-4  bg-opacity-20 backdrop-blur-md mb-2 text-center text-white'>
                 <p>{brief}</p>
             </div>
-        </div >
+        </div>
     )
 };
 

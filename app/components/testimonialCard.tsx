@@ -1,35 +1,21 @@
 import { useRouter } from 'next/router';
 import React from 'react'
 import { FC } from 'react';
-import SecondaryButton from './secondaryButton';
-import ThirdButton from './thirdButton';
 
 interface MyProps {
     image: string,
-    comment: string,
-    contact: string
+    comment: string
 
 }
 
 
-const TestimonialCard: FC<MyProps> = ({ image, comment, contact }) => {
-    const router = useRouter()
-
-
-    const onClicked = (e: { preventDefault: () => void }) => {
-        e.preventDefault()
-        router.push({
-            pathname: contact,
-        })
-    }
-
+const TestimonialCard: FC<MyProps> = ({ image, comment }) => {
 
     return (
-
-        <div className="flex flex-col relative h-48 w-48 bg-gold-metal bg-cover border-8 border-white rounded-md border-opacity-40 shadow-2xl shadow-inherit items-center">
+        <div className="flex flex-col relative h-48 w-48 bg-gold-metal bg-cover border-8 border-white rounded-md border-opacity-40 shadow-2xl shadow-inherit items-center text-center m-8 sm:m-2">
             <img
                 src={image}
-                className="absolute h-24 w-24 -top-12 border rounded-full " />
+                className="absolute h-24 w-24 -top-12 border rounded-full" />
             <ul className="absolute flex items-center gap-x-1 top-14">
                 <li>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
@@ -59,29 +45,7 @@ const TestimonialCard: FC<MyProps> = ({ image, comment, contact }) => {
                 </li>
             </ul>
             <p className='absolute text-sm text-center top-20'>{comment}</p>
-            <button
-                className="
-                absolute
-                top-40
-                rounded-md
-                px-2 
-                py-3             
-                md:block 
-                text-yellow-400
-                bg-black-metal
-                bg-cover
-                w-32
-                mx-4
-                flex
-                flex-row"
-                onClick={(e) => { onClicked(e) }}>
-                {"Contact"}
-
-            </button>
         </div>
-
-
-
     )
 };
 

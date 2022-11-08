@@ -75,7 +75,7 @@ const chatBots = [
 export default function Portfolio() {
     return (
         <div className='m-8'>
-            <div className='grid grid-cols-2 gap-4 m-4 p-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-4 m-4 p-4'>
                 <h1 className='text-white text-3xl font-extrabold'>
                     Check out our Portolio
                 </h1>
@@ -91,7 +91,7 @@ export default function Portfolio() {
             </div>
 
 
-            <div className='grid grid-cols-4 gap-2 m-4 place-items-center'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 m-4 place-items-center'>
                 {projects.map((v, index) => {
                     return (
                         <Transition
@@ -117,7 +117,7 @@ export default function Portfolio() {
 
             </div>
 
-            <div className='grid grid-cols-4 gap-2 m-4 place-items-center'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 m-4 place-items-center'>
                 {mobileProjects.map((v, index) => {
                     return (
                         <Transition
@@ -141,7 +141,7 @@ export default function Portfolio() {
                 })}
             </div>
 
-            <div className='grid grid-cols-4 gap-2 m-4 place-items-center'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 m-4 place-items-center'>
                 {chatBots.map((v, index) => {
                     return (
                         <Transition
