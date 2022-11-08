@@ -91,55 +91,5 @@ export default function Nav() {
 
 
 
-    // return (
-    //     <div className='w-full grid grid-cols-10'>
 
-    //         <div className='col-span-9 flex flex-row'>
-    //             {isMobile ? <p></p> : <img src={'/images/logo.png'} alt='logo' width={100} height={100} />}
-    //             <div className="md:hidden flex items-center">
-    //                 <button onClick={() => openNav()} className="h-8">
-    //                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 fill-white">
-    //                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-    //                     </svg>
-
-    //                 </button>
-    //             </div>
-    //             {/* <p className='text-white font-extrabold  mt-10'>Vision Is Primary</p> */}
-    //             <div className={isMobile ? "hidden" : ""}>
-    //                 <Link href={"#about"}><p className='text-white font-extrabold  mt-10 mx-2'>About</p></Link>
-    //                 <Link href={"#cases"}><p className='text-white font-extrabold  mt-10  mx-2'>Use Cases</p></Link>
-    //                 <Link href={"#portfolio"}><p className='text-white font-extrabold  mt-10  mx-2'>Portfolio</p></Link>
-    //                 <Link href={"#testimonials"}><p className='text-white font-extrabold  mt-10  mx-2'>Testimonials</p></Link>
-    //             </div>
-
-
-
-    //         </div>
-    //         <div className='col-span-1 mt-10'>
-    //             {isMobile ? <div id="menu" className={isMobile ? `opacity-100` : `hidden`}>
-    //                 <ul>
-    //                     <li className='m-2'>
-    //                         <Link href={"#about"}><p className='text-white font-extrabold  mt-10 mx-2'>About</p></Link>
-    //                     </li>
-    //                     <li className='m-2'>
-    //                         <Link href={"#cases"}><p className='text-white font-extrabold  mt-10  mx-2'>Use Cases</p></Link>
-    //                     </li>
-    //                     <li className='m-2'>
-    //                         <Link href={"#portfolio"}><p className='text-white font-extrabold  mt-10  mx-2'>Portfolio</p></Link>
-    //                     </li>
-    //                     <li className='m-2'>
-    //                         <Link href={"#testimonials"}><p className='text-white font-extrabold  mt-10  mx-2'>Testimonials</p></Link>
-    //                     </li>
-    //                 </ul>
-
-    //             </div> : <Link href={contactLink}><p className='text-white font-extrabold'>Contact us</p></Link>}
-
-
-    //         </div>
-
-
-
-
-    //     </div>
-    // )
 }
