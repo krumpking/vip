@@ -5,23 +5,23 @@ import PortfolioCard from './portfolioCard'
 
 const projects = [
     {
-        image: "/gifs/bishopsmount.gif",
+        video: "/videos/bishopsmount.webm",
         brief: "Bishops Mount Centre",
 
     },
     {
-        image: "/gifs/africamining.gif",
+        video: "/videos/africamining.webm",
         brief: "Africa Mining",
 
     },
     {
-        image: "/gifs/gigz.gif",
-        brief: "Gigz",
+        video: "/videos/fundo.webm",
+        brief: "Fundo E-learning",
 
     },
     {
-        image: "/gifs/consultancyhub.gif",
-        brief: "Consultancy Hub",
+        video: "/videos/eventit.webm",
+        brief: "Eventit",
 
     },
 
@@ -29,49 +29,28 @@ const projects = [
 
 const mobileProjects = [
     {
-        image: "/gifs/shoe.gif",
-        brief: "E-Commerce App",
-
-    },
-    {
-        image: "/gifs/chatapp.gif",
+        video: "/videos/chatapp.mp4",
         brief: "Chat App",
 
     },
     {
-        image: "/gifs/ticket.gif",
-        brief: "Ticket App",
-
-    },
-    {
-        image: "/gifs/shopping.gif",
+        video: "/videos/shoe.mp4",
         brief: "Shopping App",
 
     },
-]
-
-const chatBots = [
     {
-        image: "/gifs/wa.gif",
+        video: "/videos/wa.mp4",
         brief: "Whatsapp Chatbot",
 
     },
     {
-        image: "/gifs/fb.gif",
+        video: "/videos/fb.mp4",
         brief: "Facebook Chatbot",
 
     },
-    {
-        image: "/gifs/matrix.gif",
-        brief: "Matrix loading animation",
-
-    },
-    {
-        image: "/gifs/umoja.gif",
-        brief: "Chat App",
-
-    },
 ]
+
+
 export default function Portfolio() {
     return (
         <div className='m-8'>
@@ -106,7 +85,7 @@ export default function Portfolio() {
                                 <animated.div style={styles}>
                                     <PortfolioCard
                                         website={true}
-                                        image={v.image}
+                                        video={v.video}
                                         brief={v.brief} />
                                 </animated.div>
                             }
@@ -132,7 +111,7 @@ export default function Portfolio() {
                                 <animated.div style={styles}>
                                     <PortfolioCard
                                         website={false}
-                                        image={v.image}
+                                        video={v.video}
                                         brief={v.brief} />
                                 </animated.div>
                             }
@@ -141,30 +120,6 @@ export default function Portfolio() {
                 })}
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 m-4 place-items-center'>
-                {chatBots.map((v, index) => {
-                    return (
-                        <Transition
-                            items={chatBots[index]}
-                            from={{ opacity: 0, transform: "translate3d(0px,35px,0px)" }}
-                            enter={{ opacity: 1, transform: "translate3d(0px,-15px,0px)" }}
-                            leave={{ opacity: 0, transform: "translate3d(0px,-15px,0px)" }}
-                            reverse={false}
-                            delay={600 + (index * 100)}
-                        >
-                            {(styles, v) =>
-                                <animated.div style={styles}>
-                                    <PortfolioCard
-                                        website={false}
-                                        image={v.image}
-                                        brief={v.brief} />
-                                </animated.div>
-                            }
-                        </Transition>
-                    )
-                })}
-
-            </div>
 
 
         </div>

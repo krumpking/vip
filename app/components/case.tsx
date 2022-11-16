@@ -69,7 +69,7 @@ const useCases = [
         ],
     },
     {
-        "case": "Insurence",
+        "case": "Insurance",
         "description": "You can set up a platform to see all the client premiums.The payouts done and expected maturity stage all at your finger tips",
         "platfroms": [
             {
@@ -118,7 +118,7 @@ const Cases = () => {
             >
                 {(styles, item) =>
                     item && <animated.div style={styles}>
-                        <p className='m-8  text-white items-center text-center '> At Vision Is Primary we see software as an ART.We believe software done well can express your identity.We now live in a digital world!!!You can STAND OUT by having software that carries your unique identity.Software can help reach more customers and leave an impression on them that will last a lifetime.We also love that software can help automate your daily tasks, help reduce your overheads, which is part of your thrust</p>
+                        <p className='m-8  text-white items-center text-center '> At Vision Is Primary we see software as an ART.We believe software done well can express your identity.We now live in a digital world!!!You can STAND OUT by having software that carries your unique identity.Software can help reach more customers and leave an impression on them that will last a lifetime.We also love that software can help automate your daily tasks, help reduce your overheads, which is part of our thrust</p>
 
                     </animated.div>
                 }
@@ -133,7 +133,7 @@ const Cases = () => {
             >
                 {(styles, item) =>
                     item && <animated.div style={styles}>
-                        <p className='text-white m-4'>Some intersting Use Cases</p>
+                        <p className='text-white m-4'>Some interesting Use Cases</p>
 
                     </animated.div>
                 }

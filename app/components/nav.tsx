@@ -70,7 +70,7 @@ export default function Nav() {
                         >
                             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                                 <li className="text-white">
-                                    <Link href={"#about"}><p className='text-white font-extrabold'>About</p></Link>
+                                    <Link href={"#how"}><p className='text-white font-extrabold'>How it works</p></Link>
                                 </li>
                                 <li className="text-white">
                                     <Link href={"#cases"}><p className='text-white font-extrabold'>Use Cases</p></Link>
@@ -78,6 +78,7 @@ export default function Nav() {
                                 <li className="text-white">
                                     <Link href={"#portfolio"}><p className='text-white font-extrabold'>Portfolio</p></Link>
                                 </li>
+
                                 <li className="text-white">
                                     <Link href={"#testimonials"}><p className='text-white font-extrabold'>Testimonials</p></Link>
                                 </li>

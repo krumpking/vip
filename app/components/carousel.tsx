@@ -7,28 +7,28 @@ const data = [
     {
         id: 0,
         title: "First title",
-        image: '/gifs/movie.gif'
+        video: '/videos/wave.mp4'
     },
     {
         id: 1,
         title: "Second title",
-        image: '/gifs/wave.gif'
+        video: '/videos/movie.mp4'
     },
     {
         id: 2,
         title: "Third title",
-        image: '/gifs/shereigns.gif'
+        video: '/videos/shereigns.webm'
     },
 
     {
         id: 3,
         title: "Fourth title",
-        image: '/gifs/houseofkenzolla.gif'
+        video: '/videos/travelhub.webm'
     },
     {
         id: 4,
         title: "Second title",
-        image: '/gifs/shopping.gif'
+        video: '/videos/shopping.mp4'
     },
 ];
 
@@ -78,7 +78,11 @@ const Carousel = (props: any) => {
                                 }}
                             >
                                 <div className='border-8 border-white rounded-md border-opacity-40 shadow-2xl'>
-                                    <img src={data[item]?.image} className='max-h-96' />
+
+                                    <video className='max-h-96' autoPlay={true} loop={true}>
+                                        <source src={data[item]?.video} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
                                 </div>
 
                             </animated.div>
