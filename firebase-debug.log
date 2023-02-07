@@ -1,0 +1,86 @@
+[debug] [2023-02-07T16:00:41.490Z] ----------------------------------------------------------------------
+[debug] [2023-02-07T16:00:41.492Z] Command:       /snap/node/6895/bin/node /usr/local/bin/firebase init
+[debug] [2023-02-07T16:00:41.493Z] CLI Version:   11.16.1
+[debug] [2023-02-07T16:00:41.493Z] Platform:      linux
+[debug] [2023-02-07T16:00:41.493Z] Node Version:  v16.18.1
+[debug] [2023-02-07T16:00:41.494Z] Time:          Tue Feb 07 2023 18:00:41 GMT+0200 (Central Africa Time)
+[debug] [2023-02-07T16:00:41.494Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-07T16:00:41.569Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-07T16:00:41.569Z] > authorizing via signed-in user (visionisprimary@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/unashe/Documents/repository/vip
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-02-07T16:00:45.581Z] Using project from CLI flag: visionisprimary
+[debug] [2023-02-07T16:00:45.588Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/visionisprimary [none]
+[debug] [2023-02-07T16:00:46.228Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/visionisprimary 403
+[debug] [2023-02-07T16:00:46.229Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/visionisprimary {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-02-07T16:00:46.230Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-02-07T16:00:46.650Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (/usr/local/share/.config/yarn/global/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/usr/local/share/.config/yarn/global/node_modules/firebase-tools/lib/apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project visionisprimary. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-02-07T16:01:59.842Z] ----------------------------------------------------------------------
+[debug] [2023-02-07T16:01:59.845Z] Command:       /snap/node/6895/bin/node /usr/local/bin/firebase init
+[debug] [2023-02-07T16:01:59.845Z] CLI Version:   11.16.1
+[debug] [2023-02-07T16:01:59.846Z] Platform:      linux
+[debug] [2023-02-07T16:01:59.846Z] Node Version:  v16.18.1
+[debug] [2023-02-07T16:01:59.846Z] Time:          Tue Feb 07 2023 18:01:59 GMT+0200 (Central Africa Time)
+[debug] [2023-02-07T16:01:59.847Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-07T16:01:59.918Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-07T16:01:59.918Z] > authorizing via signed-in user (visionisprimary@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/unashe/Documents/repository/vip
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-02-07T16:02:06.794Z] Using project from CLI flag: visionisprimary
+[debug] [2023-02-07T16:02:06.801Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/visionisprimary [none]
+[debug] [2023-02-07T16:02:07.418Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/visionisprimary 403
+[debug] [2023-02-07T16:02:07.418Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/visionisprimary {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-02-07T16:02:07.420Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-02-07T16:02:07.845Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (/usr/local/share/.config/yarn/global/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/usr/local/share/.config/yarn/global/node_modules/firebase-tools/lib/apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project visionisprimary. Please make sure the project exists and your account has permission to access it.

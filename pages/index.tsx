@@ -46,8 +46,12 @@ export default function Home() {
             <Nav />
             <div className='grid grid-cols-1 afterMini:grid-cols-10'>
               <div className='col-span-4 lg:col-span-5  lg:p-0 flex flex-col m-4 bg-black-metal bg-cover border rounded-lg   afterMini:bg-none afterMini:border-none p-4'>
-                <h1 className='text-white xxs:text-2xl xs:text-5xl font-extrabold m-8 w-full'>Vision Is Primary</h1>
-                <p className='text-white text-lg mt-8 ml-8 mr-8'>Your vision is that dream you have. When you want to decrease your business costs, Vision Is Primary is your choice partner.When you want to enhance your digital presence to increase your bottom line. Vision Is Primary is your choice partner.At Vision Is Primary we do not just make websites or applications or systems. We make <span className='text-yellow-400'>ART</span>.<span className='text-yellow-400'>Tailor made</span>, as far as your eyes can see, we can bring it into reality</p>
+                <h1 className='text-white xxs:text-2xl xs:text-3xl font-extrabold m-8 w-full'>Automation could you save more than <span className='text-yellow-500'>20 hours</span> a week!</h1>
+                <p className='text-white text-lg mt-8 ml-8 mr-8'>We help organizations increase the return on their time by crafting and implementing their <span className='text-yellow-500'>Digital Strategy</span></p>
+
+                <p className='text-white text-lg mt-8 ml-8 mr-8'>We use a set of tools that help you automate routine business activities, streamline your workflows, and improve the efficiency of your business processes.</p>
+
+                <p className='text-white text-lg mt-8 ml-8 mr-8'> We also help build custom software for your business, like a website, mobile app, and desktop app, to help achieve the goals of your business</p>
                 <div className='mt-8 ml-8 mr-8 flex flex-row justify-start'>
                   <Button text="Contact Us" link={contactLink} />
                   <Link href="#portfolio"><p className="m-2 text-white">See more</p></Link>
@@ -97,12 +101,12 @@ export default function Home() {
         </div>
 
 
-      </div>
+      </div >
       <a href={contactLink}>
         <img src='/images/whatsapp.png' className={'animate-bounce fixed bottom-20  right-10 h-16 w-16'} />
       </a>
 
-    </div>
+    </div >
 
 
   )
