@@ -46,7 +46,7 @@ export default function Home() {
             <Nav />
             <div className='grid grid-cols-1 afterMini:grid-cols-10'>
               <div className='col-span-4 lg:col-span-5  lg:p-0 flex flex-col m-4 bg-black-metal bg-cover border rounded-lg   afterMini:bg-none afterMini:border-none p-4'>
-                <h1 className='text-white xxs:text-2xl xs:text-3xl font-extrabold m-8 w-full'>Automation could you save more than <span className='text-yellow-500'>20 hours</span> a week!</h1>
+                <h1 className='text-white xxs:text-2xl xs:text-3xl font-extrabold m-8 w-11/12'>Automation could you save more than <span className='text-yellow-500'>20 hours</span> a week!</h1>
                 <p className='text-white text-lg mt-8 ml-8 mr-8'>We help organizations increase the return on their time by crafting and implementing their <span className='text-yellow-500'>Digital Strategy</span></p>
 
                 <p className='text-white text-lg mt-8 ml-8 mr-8'>We use a set of tools that help you automate routine business activities, streamline your workflows, and improve the efficiency of your business processes.</p>
